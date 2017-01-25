@@ -1,1 +1,1 @@
-web: gunicorn sirh.wsgi --log-file -
+web: gunicorn djangoecommerce.wsgi --log-file -
