@@ -77,10 +77,8 @@ WSGI_APPLICATION = 'djangoecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-default_dburl = 'postgres://postgres:postgres@localhost:5432/djangoecommerce'
-
 DATABASES = {
-    'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
+    'default': config('DATABASE_URL', cast=dburl),
 }
 
 # Password validation
