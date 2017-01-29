@@ -14,8 +14,10 @@
                     <a href="{% url 'index' %}">Início</a>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'product_list' %}" id="download">Categorias
-                        <span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown"
+                       href="{% url 'catalog:product_list' %}" id="download">Categorias
+                        <span class="caret"></span>
+                    </a>
                     <ul class="dropdown-menu" aria-labelledby="download">
                         {% for category in categories %}
                             <li><a href="#">{{ category.name }}</a></li>
@@ -23,7 +25,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="{% url 'contact' %}">Contato</a>
+                    <a href="#">Contato</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
