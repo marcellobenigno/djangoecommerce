@@ -1,15 +1,15 @@
 {% extends "master.html" %}
 
 {% block title %}
-    Listagem de Produtos | {{ block.super }}
+    {{ current_category }} | {{ block.super }}
 {% endblock %}
 
 {% block container %}
     <div class="page-header">
-        <h1>Produtos</h1>
+        <h1>{{ current_category }}</h1>
     </div>
     <div class="row">
-        {% for product in product_list %}
+        {% for product in products_list %}
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <a href="{{ product.get_absolute_url }}">

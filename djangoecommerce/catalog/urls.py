@@ -3,4 +3,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.product_list, name='product_list'),
+    url(r'^(?P<slug>[\w -]+)/$', views.category, name='category'),
+    url(r'^produtos/(?P<slug>[\w-]+)/$', views.product, name='product'),
 ]
