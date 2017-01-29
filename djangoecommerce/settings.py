@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # thirdy apps
+    'django_extensions',
 
     # my apps
     'djangoecommerce.core',
+    # Catalog
+    'djangoecommerce.catalog.apps.CatalogConfig',
 ]
 
 MIDDLEWARE_CLASSES = [
