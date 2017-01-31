@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="{% static 'assets/custom.min.css' %}" media="screen"/>
 </head>
 <body>
-    {% include 'includes/navbar.html' %}
-    <div class="container">
-        {% block container %}
-        {% endblock %}
-        {% include 'includes/footer.html' %}
-    </div>
+{% include 'includes/navbar.html' %}
+<div class="container">
+    {% block container %}
+    {% endblock %}
+    {% include 'includes/footer.html' %}
+</div>
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="{% static 'assets/bootstrap.min.js' %}"></script>
 </body>

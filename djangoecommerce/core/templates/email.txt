@@ -1,0 +1,15 @@
+Olá {{ name }}, tudo bem?
+
+Muito obrigado por entrar em contato com o Django-Ecommerce.
+
+Em até 48 horas úteis a nossa equipe entrará em contato com você.
+
+Atenciosamente,
+--
+Equipe Django-Ecommerce
+
+-------------------------------------------------------------------------------
+
+{{ name }} escreveu:
+
+{{ message }}
