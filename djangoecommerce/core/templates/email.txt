@@ -1,3 +1,6 @@
+CONTATO Django-Ecommerce:
+------------------------
+
 Olá {{ name }}, tudo bem?
 
 Muito obrigado por entrar em contato com o Django-Ecommerce.
