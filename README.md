@@ -8,7 +8,6 @@ https://www.udemy.com/construa-um-e-commerce-com-python-3-e-django/
 
 https://ecommerce-marcellobenigno.herokuapp.com/
 
-
 ## Como desenvolver?
 
 1. Clone o repositório.
@@ -30,7 +29,6 @@ cp contrib/env-sample .env
 python manage.py test
 ```
 
-
 ## Como fazer o deploy?
 
 1. Crie um instância no heroku.
@@ -45,5 +43,5 @@ heroku create minhainstancia
 heroku config:push
 heroku config:set SECRET_KEY=`python contrib/secret_gen.py`
 heroku config:set DEBUG=False
-# configuro o email
+# configure o email
 git push heroku master --force
