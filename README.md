@@ -10,22 +10,35 @@ https://ecommerce-marcellobenigno.herokuapp.com/
 
 ## Como desenvolver?
 
-1. Clone o repositório.
-2. Crie um virtualenv com Python 3.5.0
-3. Ative o virtualenv.
-4. Instale as dependências.
-5. Crie um Banco de Dados PostgreSQL (djangoecommerce) e defina o usuário e senha (ex: user=postgres, password=postgres)
-6. Configure a instância com o .env
+1. Clone o repositório;
+2. Crie um virtualenv com Python 3.5.0;
+3. Ative o virtualenv;
+4. Instale as dependências;
+5. Crie um Banco de Dados PostgreSQL (djangoecommerce) e defina o usuário e senha (ex: user=postgres, password=postgres);
+6. Configure a instância com o .env;
 7. Execute os testes.
 
 ```console
+# 1. Clone o repositório
 git clone git@github.com:marcellobenigno/djangoecommerce.git djangoecommerce_src
 cd djangoecommerce_src
+
+# 2. Crie um virtualenv com Python 3.5.0
 python -m venv .venv
-createdb djangoecommerce
+
+# 3. Ative o virtualenv
 source .venv/bin/activate
+
+# 4. Instale as dependências
 pip install -r requirements-dev.txt
+
+# 5. Crie um Banco de Dados PostgreSQL
+createdb djangoecommerce
+
+# 6. Configure a instância com o .env
 cp contrib/env-sample .env
+
+# 7. Execute os testes
 python manage.py test
 ```
 
