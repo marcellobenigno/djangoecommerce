@@ -16,11 +16,16 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.auth.views import login, logout
+
 from .core import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^contato/$', views.contact, name='contact'),
+    url(r'^entrar/$', login, {'template_name': 'login.html'}, name='login'),
+    url(r'^cadastro/$', views.register, name='register'),
+    url(r'^sair/$', logout, name='logout'),
     url(r'^catalogo/', include('djangoecommerce.catalog.urls', namespace='catalog')),
     url(r'^admin/', admin.site.urls),
 ]
